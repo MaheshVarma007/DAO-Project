@@ -134,7 +134,7 @@ export default function Home() {
       await fetchAllProposals();
     } catch (error) {
       console.error(error);
-      window.alert(error.data.message);
+      
     }
   };
 

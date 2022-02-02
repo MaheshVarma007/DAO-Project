@@ -1,4 +1,4 @@
-export const CRYPTODEVS_DAO_CONTRACT_ADDRESS = "0x283Dd8277C797EfAf8380e86A9549e830C9e0F1E";
+export const CRYPTODEVS_DAO_CONTRACT_ADDRESS = "0x6b610FEdCC26fd2158b24C64aDC2924d1e0320D8";
 export const CRYPTODEVS_NFT_CONTRACT_ADDRESS = "0x2b4Ae0FfB49C9ffaa3da12fd5DeFf0D9F506970D";
 
 export const CRYPTODEVS_DAO_ABI = [
@@ -94,6 +94,45 @@ export const CRYPTODEVS_DAO_ABI = [
           "internalType": "address",
           "name": "",
           "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "proposals",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "nftTokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "deadline",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "yayVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "nayVotes",
+          "type": "uint256"
+        },
+        {
+          "internalType": "bool",
+          "name": "executed",
+          "type": "bool"
         }
       ],
       "stateMutability": "view",
